@@ -1,3 +1,9 @@
+import React from 'react'
+import { Link } from 'react-router-dom'
+import homeStore from '../stores/homeStore'
+
+
+
 export default function Home() {
     const store = homeStore()
 
