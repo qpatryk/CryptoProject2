@@ -16,7 +16,7 @@ function debounce(func, wait, immediate) {
 };
 
 
-export default debounce
+export default debounce;
 
 
 // export default function debounce(func, timeout = 300) {
