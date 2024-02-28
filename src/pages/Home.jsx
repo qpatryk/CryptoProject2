@@ -10,9 +10,11 @@ export default function Home() {
     React.useEffect(() => {
         store.fetchCoins()
     }, [])
-
+    // input field to search for coins
     return (
         <div>
+            <input type="text" value={store.query} onChange={store.setQuery} />
+
             {store.coins.map(coin => {
                 return (
                     <div key={coin.id}>
